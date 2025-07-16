@@ -11,7 +11,7 @@ body {
 
 
 div {
-    border: 1px solid red;
+    navigation: 1px solid red;
 }
 
 .navbar {
@@ -19,9 +19,14 @@ div {
     justify-content: space-between;
     align-items: center;
     background-color: #1f2937;
-    padding: 0 100px;
+    padding: 0px 100px 100px 100px;
     color: #f9faf8;
     
+}
+
+.logo-main {
+    font-size: 30px;
+    font-weight:bold ;
 }
 
 .menu-links {
@@ -33,6 +38,7 @@ div {
 
 .menu-item {
     list-style-type: none;
+    font-weight: 500;
 }
 
 .body-wrapper{
@@ -58,6 +64,10 @@ div {
     flex-grow: 1;
 }
 
+.hero-section-container {
+    gap: 20px;
+}
+
 .container-left {
     display: flex;
     justify-content: center;
@@ -71,7 +81,9 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;    
+    flex-direction: column;  
+    background-color: gray;
+    noborder: 1px solid red  
 
 }
 
@@ -107,14 +119,13 @@ div {
     border-radius: 7px;
 }
 
-.body-section {
+.body-section-one {
     display: flex;
     flex-direction: column;
-    justify-content: center ;
     align-items: center;
     padding: 20px 100px;
     background-color: #ededed;
-    max-height: fit-content;
+    height: fit-content;
 }
 
 
@@ -127,31 +138,53 @@ div {
     font-size: 36px;
 }
 
-.card-container {
+.grid-container {
     display: flex;
-    justify-content:flex-start ;
-    align-items: flex-start ;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
-    flex: 0 0 auto;
-    flex-wrap: wrap;
     padding: 30px;
+    nobackground-color: red;
+    noborder: 2px solid green;
+    width: auto;
 }
 
-.card {
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    noborder: 5px solid blue;
+    max-height: 400px;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    
+  
+}
+
+.grid-items {
     display: flex;
     width: 50%;
     aspect-ratio: 1 / 1;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 1;
+    flex-basis: 100px;
     padding: 10px;
     border-radius: 10px;
     color: #222222;
+    noborder: 5px solid yellow;
+    
     
 }
+
 img {
+    noborder: 5px solid green;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    margin: 10px;
     width: 150px;
     border-radius: 10px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.09);
@@ -159,10 +192,100 @@ img {
 }
 
 div p {
-    padding: 0px 5px;
+    padding: 0px 15px;
     font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.body-section-two {
+    background-color: #e5e7eb;
+    border: 1px solid green;
+    padding: 100px 200px;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+.body-section-three {
+    padding: 100px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three-container {
+    width: 700px;
+    height: 150px;
+    background-color: #3882f6;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-three-left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    noborder: 5px solid green;
+    width: 50%;
+    padding-left: 30px;
+    padding-bottom: 0px;
+}
+
+.section-three-main-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: azure;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+
+.section-three-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: azure;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 0px;
+    margin: 0px;
+    text-align: start;
+}
+
+.section-three-right {
+    noborder: 5px solid blue;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.secondary-button {
+    background-color: #3882f6;
+    color:#f9faf8;
+    font-weight: bolder;
+    font-size: 15px;
+    padding: 8px 30px;
+    border-radius: 7px;
+    border: 1px solid azure;
+
 }
