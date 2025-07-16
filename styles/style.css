@@ -114,8 +114,9 @@ div {
 
 .main-button {
     background-color: #3882f6;
+    border: 1px solid #3882f6;
     color:#f9faf8;
-    padding: 8px 25px;
+    padding: 10px 45px;
     border-radius: 7px;
 }
 
