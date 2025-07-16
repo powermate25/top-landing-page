@@ -11,7 +11,7 @@ body {
 
 
 div {
-    border: 3px solid red;
+    border: 1px solid red;
 }
 
 .navbar {
@@ -51,7 +51,11 @@ div {
 .container {
     width: 100%;
     height: 300px;
-    
+    display: flex;
+    justify-content: center;
+    flex-basis: 360px;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 
 .container-left {
@@ -59,23 +63,41 @@ div {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+   
+}
+
+.container-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
 
 }
 
+
 .hero-content {
-    width: 300px;
+    display: flex;
+    align-items: center;
+    width: 100%;
     height: 100%;
     color: #f9faf8;
 }
 
-.content1-text {
+.content-one-text {
     font-size: 48px;
     font-weight: 900;
 }
 
-.content2-text {
+.content-two-text {
     color: #e5e7eb;
     font-size: 18px;
+}
+
+.content-three-button {
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
 }
 
 .main-button {
@@ -83,4 +105,64 @@ div {
     color:#f9faf8;
     padding: 8px 25px;
     border-radius: 7px;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #ededed;
+    max-height: fit-content;
+}
+
+
+
+.section-one-title {
+    display: flex;
+    max-height: fit-content;
+    color: #1f2937;
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.card-container {
+    display: flex;
+    justify-content:flex-start ;
+    align-items: flex-start ;
+    gap: 30px;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.card {
+    display: flex;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    border-radius: 10px;
+    color: #222222;
+    
+}
+img {
+    display: flex;
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 16px rgba(0,0,0,.09);
+    
+}
+
+div p {
+    padding: 0px 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
