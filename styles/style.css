@@ -225,13 +225,14 @@ div p {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #f9faf8;
 }
 
 .section-three-container {
     width: 700px;
     height: 150px;
     background-color: #3882f6;
-    border-radius: 10px;
+    border-radius: 9px;
     display: flex;
     justify-content: space-between;
 }
@@ -286,4 +287,13 @@ div p {
     border-radius: 7px;
     border: 1px solid azure;
 
+}
+
+.body-section-four {
+    background-color: #1f2937;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e5e7eb;
 }
