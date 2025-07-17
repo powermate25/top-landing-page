@@ -1,18 +1,21 @@
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: roboto;
+    font-family: "Roboto", sans-serif;
     
 }
 
 
+/* Helps visualizing borders.
 
 div {
-    navigation: 1px solid red;
+    border: 1px solid red;
 }
+    */
 
 .navbar {
     display: flex;
@@ -49,61 +52,62 @@ div {
 
 .hero-section {
     display: flex;
-    justify-content: center ;
+    justify-content:space-between ;
     align-items: center;
     padding: 20px 100px;
 }
 
-.container {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-basis: 360px;
-    flex-shrink: 0;
-    flex-grow: 1;
-}
 
-.hero-section-container {
+.hero-section-containers {
     gap: 20px;
 }
 
 .container-left {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;    
     
    
 }
 
+
 .container-right {
+    border: 1px solid rgb(213, 210, 210);
+   /* width: 1000px;
+    height: 300px; */
+    width: 100vw;
+    height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;  
-    background-color: gray;
-    noborder: 1px solid red  
+    flex-direction: column;
+    background-image: url("../images/hero-image.jpg");
+    
+    
 
-}
-
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: #f9faf8;
 }
 
 .content-one-text {
     font-size: 48px;
     font-weight: 900;
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+    color: #f9faf8;   
+
 }
 
 .content-two-text {
     color: #e5e7eb;
     font-size: 18px;
+    margin: 20px 0px ;
+    padding: 0px;
+    
 }
 
 .content-three-button {
@@ -118,6 +122,8 @@ div {
     color:#f9faf8;
     padding: 10px 45px;
     border-radius: 7px;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 .body-section-one {
@@ -145,8 +151,6 @@ div {
     align-items: center;
     gap: 30px;
     padding: 30px;
-    nobackground-color: red;
-    noborder: 2px solid green;
     width: auto;
 }
 
@@ -155,7 +159,6 @@ div {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    noborder: 5px solid blue;
     max-height: 400px;
     flex-wrap: nowrap;
     flex-shrink: 1;
@@ -173,14 +176,11 @@ div {
     flex-basis: 100px;
     padding: 10px;
     border-radius: 10px;
-    color: #222222;
-    noborder: 5px solid yellow;
-    
+    color: #222222;   
     
 }
 
-img {
-    noborder: 5px solid green;
+div img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,7 +203,6 @@ div p {
 
 .body-section-two {
     background-color: #e5e7eb;
-    border: 1px solid green;
     padding: 100px 200px;
 }
 
@@ -242,7 +241,6 @@ div p {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    noborder: 5px solid green;
     width: 50%;
     padding-left: 30px;
     padding-bottom: 0px;
@@ -272,7 +270,6 @@ div p {
 }
 
 .section-three-right {
-    noborder: 5px solid blue;
     width: 30%;
     display: flex;
     justify-content: flex-end;
